@@ -26,9 +26,8 @@ my %WriteMakefileArgs = (
     "Carp" => 0,
     "Class::Load" => "0.20",
     "Data::Printer" => 0,
-    "File::ShareDir::ProjectDistDir" => 0,
+    "File::ShareDir::ProjectDistDir" => "v0.4.0",
     "LWP::Protocol::https" => 0,
-    "Module::Load" => 0,
     "Moose" => 0,
     "Moose::Role" => 0,
     "Moose::Util::TypeConstraints" => 0,
@@ -43,7 +42,8 @@ my %WriteMakefileArgs = (
     "MooseX::Types::Locale::Currency" => 0,
     "MooseX::Types::Path::Class" => 0,
     "MooseX::Types::UUID" => 0,
-    "MooseX::UndefTolerant" => 0,
+    "MooseY::RemoteHelper::MessagePart" => 0,
+    "MooseY::RemoteHelper::Role::Client" => 0,
     "XML::Compile::SOAP11" => 0,
     "XML::Compile::Transport::SOAPHTTP" => 0,
     "XML::Compile::WSDL11" => 0,
@@ -53,10 +53,11 @@ my %WriteMakefileArgs = (
   },
   "TEST_REQUIRES" => {
     "Test::Method" => 0,
+    "Test::Moose" => 0,
     "Test::More" => "0.88",
     "Test::Requires::Env" => 0
   },
-  "VERSION" => "0.001004",
+  "VERSION" => "0.002000",
   "test" => {
     "TESTS" => "t/*.t t/request/*.t"
   }
